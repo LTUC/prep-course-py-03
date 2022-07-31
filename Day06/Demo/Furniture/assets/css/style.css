@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 350ms;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-scroll {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 5px 100px;
+  z-index: 1;
+  border-bottom: 1px solid rgba(255, 159, 41, 0.8);
+}
+
+.header-scroll .header-logo {
+  width: 60px;
+}
+
+.header-logo {
+  width: 80px;
+}
+
+.header-logo img {
+  filter: brightness(0) invert(1);
+}
+
+.header-nav {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-item {
+  color: #fff;
+  position: relative;
+}
+
+.nav-item:hover::after {
+  width: 50%;
+}
+
+.nav-item::after {
+  height: 2px;
+  width: 0%;
+  background: #fff;
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+
+/* Hero */
+.hero-slider {
+  height: 100vh;
+  background: url(https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80), rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-blend-mode: overlay;
+}
+
+.hero-item {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.hero-item h1 {
+  font-size: 62px;
+  line-height: 1;
+}
+
+.heading-top {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ff9f29;
+}
+
+.hero-item p {
+  width: 70%;
+}
+
+/* experience */
+
+.experience {
+  display: flex;
+  align-items: center;
+  padding: 100px 100px 100px 30px;
+  gap: 100px;
+}
+
+.experience img {
+  border-radius: 20px;
+}
+
+.experience > article:last-child {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.experience h2 {
+  font-size: 42px;
+}
+
+.experience p {
+  color: #aaa;
+  line-height: 2;
+}
+
+.read-more {
+  color: #ff9f29;
+}
+
+.material {
+  display: flex;
+  padding: 0 30px 100px 100px;
+  align-items: center;
+  gap: 200px;
+}
+
+.material-2-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 100%;
+  gap: 20px;
+}
+
+.material-2-col img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.material-2-col img:nth-child(1) {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.material-2-col img:nth-child(2) {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+
+.material-2-col img:nth-child(3) {
+  grid-column: 2 / 4;
+  grid-row: 1 / 4;
+}
+
+.material h2 {
+  font-size: 42px;
+}
+
+.material p {
+  color: #aaa;
+  line-height: 2;
+}
+
+/* services */
+.services {
+  display: flex;
+  gap: 100px;
+  padding: 100px;
+  background: rgba(255, 159, 41, 0.1);
+}
+
+.services article > i {
+  color: #ff9f29;
+  font-size: 70px;
+}
+
+.services article {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.services article p {
+  color: #aaa;
+}
+
+/* products */
+.products {
+  padding: 100px 0;
+}
+
+.products h2 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 70px;
+}
+
+.product-conteiner {
+  display: flex;
+  width: 960px;
+  margin: auto;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  flex: 1 1 20%;
+}
+
+.product-item img {
+  width: 50%;
+  margin-bottom: 20px;
+  /* margin: auto;
+  display: block; */
+}
+
+.product-item h4 {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.rating {
+  color: #ff9f29;
+  font-size: 12px;
+}
+
+.price {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+/* testimonial */
+.testimonial {
+  text-align: center;
+  background: #f1f1f190;
+  padding: 100px;
+}
+
+.testimonial-item-container {
+  display: flex;
+  gap: 30px;
+}
+
+.testimonial-item {
+  background: #fff;
+  padding: 40px 20px 20px;
+  position: relative;
+  border-radius: 15px;
+}
+
+.testimonial-item img {
+  width: 70px;
+  object-fit: cover;
+  height: 70px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.testimonial h2 {
+  margin: 10px 0 70px;
+  font-size: 42px;
+}
+
+.testimonial-item h4 {
+  color: #aaa;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.testimonial-item .rating {
+  margin-top: 20px;
+}
+
+/* subscribe-banner */
+.subscribe-banner {
+  background: url(https://images.unsplash.com/photo-1541123603104-512919d6a96c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80), linear-gradient(45deg,#222 30%, rgba(0,0,0,0));
+  background-blend-mode: soft-light;
+  height: 400px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 100px;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+}
+
+.subscribe-banner h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+form input {
+  padding: 15px 20px;
+  width: 300px;
+  border: 0;
+  outline: 0;
+  border-radius: 50px;
+}
+
+form button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: 0;
+  outline: none;
+  color: #fff;
+  background-color: #ff9f29;
+  font-weight: 700;
+  margin-left: 10px;
+
+}
+
+
+/* Footer */
+footer {
+  padding: 50px 100px 0;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 50px;
+}
+
+.footer-top article:first-child {
+  grid-column: 1 / span 2;
+  color: #aaa;
+}
+
+footer a {
+  display: block;
+  line-height: 3;
+  font-size: 14px;
+  color: #444;
+}
+
+footer h2 {
+  color: #ff9f29;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.footer-top p {
+  font-size: 14px;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  padding: 20px 0 10px;
+  color: #444;
+  text-transform: capitalize;
+}
