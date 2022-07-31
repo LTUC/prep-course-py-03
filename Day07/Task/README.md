@@ -1,7 +1,7 @@
 # Task 07:
 
 ## Overview:
-Today will continue working on the Todo website.
+Today you will build a ToDo List website called ToDo.
 
 ## Problem Domain:
 You are building a ToDo List Web Application, where the users can display their tasks and check the status for each one.
@@ -9,12 +9,25 @@ You are building a ToDo List Web Application, where the users can display their 
 ## Requirements:
 
 1. **Set up your Github Repository:**
-   - Continue working on the same `todo-project` repo.
+   - Create a new repository called `todo-project` repo.
+   - Add a README.md file.
+   - Clone this repo to your local machine.
    - Check out a new branch called `todo-js` for today's task.
    - Open it in VS code.
 
+2. **You will create two pages, `index.html` and `about.html`:**
+   i. Home Page (index.html):
+   
 
-2. **Add functionality to your project:**:
+   - In **`Header`**, add navigating to any other pages. It should also contain the name of the website along with the logo.
+   - In **`Main`**, render a table with two columns, one for the tasks and the second for the status. You should add at least 3 tasks.
+   - In **`Footer`**, you should have copyright and anything you feel fits on your website.
+  
+   ii.About Page:
+      add any content you want.
+   
+
+3. **Add functionality to your project:**:
     ***Phase 1 Requirements:***
    - Create a JavaScript file called `app.js` and link it with `index.html`.
    - When the home page is running you will do the following requirements in `app.js`:
