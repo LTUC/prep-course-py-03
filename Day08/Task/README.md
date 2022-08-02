@@ -61,8 +61,11 @@ Within your javascript file (example: app.js), create separate JS object literal
     | Mid-Senior | 1000 | 1500 |
     | Junior     | 500  | 1000 |
 
-5. You will create a render method to render each employee's name with their salary on the home page using `document. write()` or you can use `innerHTML` to display them.
-- The output of the render function in the browser should look like this: 
+5.you have to console.log each  employee object:
+    - Full Name
+    - Salary
+ 
+- The output of the consoles  browser should look like this: 
 ```js
 Employee name: Ghazi Samer
 Employee salary: 1728
@@ -83,7 +86,7 @@ Employee name: Hadi Ahmad
 Employee salary: 1121
 ```
 
-6. Use the information shown in the table below to create employee instances.
+1. Use the information shown in the table below to create employee instances.
 
     | Employee ID | Full Name    | Department     | Level      |
     | ----------- | ------------ | -------------- | ---------- |
