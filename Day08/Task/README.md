@@ -62,6 +62,7 @@ Within your javascript file (example: app.js), create separate JS object literal
     | Junior     | 500  | 1000 |
 
 5.you have to console.log each  employee object:
+
     - Full Name
     - Salary
  
