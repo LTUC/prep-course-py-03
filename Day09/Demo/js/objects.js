@@ -3,12 +3,12 @@
 
 
 //Objects:
-const user = {
+const Yazan = {
     firstName: "yazan",
     course: "PY",
     age: 24,
     loveCoffee: true,
-    favFood: ["mansaf", "pizza", "stake",this.course],
+    favFood: ["mansaf", "pizza", "stake"],
     greeting: function () {
         console.log("Welcome "+this.firstName)
         
@@ -16,3 +16,28 @@ const user = {
    
     
 }
+
+const shaden = {
+  firstName: "Shaden",
+  course: "Java",
+  age: 22,
+  loveCoffee: false,
+  favFood: ["fastFood", "pizza", "stake"],
+  greeting: function () {
+    console.log("Welcome " + this.firstName);
+  },
+};
+
+
+const bashar = {
+  firstName: "Bashar",
+  course: "js",
+  age: 21,
+  loveCoffee: true,
+  favFood: ["fastFood", "pizza", "stake"],
+  greeting: function () {
+    console.log("Welcome " + this.firstName);
+  },
+};
+
+
