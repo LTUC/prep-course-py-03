@@ -3,7 +3,6 @@
 ## Outcomes
 
 Students will:
-- Learn what is a library and the differene between a library and a framework.
 - Explore different CDN Libraries.
 - Skim a documentation.
 - Search for a library.
